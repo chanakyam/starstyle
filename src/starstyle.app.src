@@ -1,0 +1,19 @@
+{application, starstyle,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {modules, []},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  goldrush,
+                  lager,
+                  cowboy,
+                  jsx,
+                  ibrowse,
+                  erlydtl
+                 ]},
+  {mod, { starstyle_app, []}},
+  {env, []}
+ ]}.
