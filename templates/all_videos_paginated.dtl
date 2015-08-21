@@ -69,15 +69,15 @@
 		<div class="slide">
 			<input type="hidden" name="vide_val" id="video_val" value="{{videoParam.video}}">
 			<div id="trailor">Loading the player...</div>
-			<a id="trailor" href= "http://video1.contentapi.ws/{{videoParam.title}}"></a>			
+			<a id="trailor" href= "http://newscdn.lycos.com/world_news/{{videoParam.title}}"></a>			
 			 
 		</div>
 		
 		<div class="slidenav" id="clips">
 			{% for n in videos %}
-			    <a class="pclass" onclick='play_video("http://video1.contentapi.ws/{{ n.video }}","{{ n.title|escape }}","{{ n.upload_date }}");' href="javascript:void(0);" title="{{n.title}}">
+			    <a class="pclass" onclick='play_video("http://newscdn.lycos.com/world_news/{{ n.video }}","{{ n.title|escape }}","{{ n.upload_date }}");' href="javascript:void(0);" title="{{n.title}}">
 			    <span class="play"></span>
-			    <img title="{{n.title}}" src="http://img1.contentapi.ws/{{ n.thumb_image }}"></a>
+			    <img title="{{n.title}}" src="http://newscdn.lycos.com/world_news/{{ n.thumb_image }}"></a>
 		    {% endfor %}
 		</div>
 	  </div>	  
@@ -89,7 +89,7 @@
 			<div>
 				<div class="picture">
 					<a href="/news/{{ mostpopular.value.id }}" >
-						<img title="{{mostpopular.value.title}}" src="http://img1.contentapi.ws/{{ mostpopular.value.view_image }}" alt="" />
+						<img title="{{mostpopular.value.title}}" src="http://newscdn.lycos.com/{{ mostpopular.value.view_image }}" alt="" />
 					</a>
 				</div>				
 				<div class="description">
@@ -106,7 +106,7 @@
 			<!-- <div class="gallery" >
 				{% for n in gallery %}
 					<a href="/music">
-						<img src="http://img1.contentapi.ws/{{ n.thumb_image }}"/>
+						<img src="http://newscdn.lycos.com/{{ n.thumb_image }}"/>
 					</a>
 				{% endfor %}				
 			</div> -->
@@ -115,7 +115,7 @@
 					{% for n in music %}
 					<div class="picture">
 						<a href="/news/{{ n.value.id }}" >
-							<img title="{{n.value.title}}" src="http://img1.contentapi.ws/{{ n.value.view_image }}" alt="" />
+							<img title="{{n.value.title}}" src="http://newscdn.lycos.com/{{ n.value.view_image }}" alt="" />
 						</a>
 					</div>				
 					<div class="description">
@@ -145,7 +145,7 @@
 				       <a href="/playvideo/{{ n.id }}">
 				       	<!-- {{ n.title }} -->
 				       	<span class="play"></span>	
-				       	<img src="http://img1.contentapi.ws/{{ n.thumb_image }}" alt="{{ n.title }}" title="{{ n.title }}"/>
+				       	<img src="http://newscdn.lycos.com/world_news/{{ n.thumb_image }}" alt="{{ n.title }}" title="{{ n.title }}"/>
 				       </a>					    					 
 					</div>
 				{% endfor %}
@@ -171,14 +171,14 @@
 					<!-- <div class="Video">
 						<a href="/playvideo/{{ videoParam._id }}">
 							<span class="play"></span>
-							<img title="{{videoParam.title}}" src="http://img1.contentapi.ws/{{ videoParam.thumb_image }}" alt="{{videoParam.title}}" />
+							<img title="{{videoParam.title}}" src="http://newscdn.lycos.com/{{ videoParam.thumb_image }}" alt="{{videoParam.title}}" />
 						</a>				
 					</div> -->
 					<div class="Title"><span class="pink">Celebrity People</span></div>
 					{% for n in latestints %}
 					<div class="Videosrow vlist">
 						<!-- <div class="thumb"><a class="ssvideo" href="/playvideo/{{ n._id }}"><span class="play"></span>				
-						<img title="{{n.title}}" src="http://img1.contentapi.ws/{{ n.thumb_image }}" alt="{{n.title}}" />
+						<img title="{{n.title}}" src="http://newscdn.lycos.com/{{ n.thumb_image }}" alt="{{n.title}}" />
 						</a>
 						</div> -->
 						
